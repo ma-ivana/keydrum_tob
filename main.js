@@ -75,7 +75,7 @@ const impresionTeclas = keys.forEach(key => {
 
 keyset[0].innerHTML = acc;
 
-window.addEventListener("keypress", function(e) {
+window.addEventListener("keydown", function(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   if(!audio) return;
